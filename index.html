@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>A Question For You ✨</title>
 
   <!-- Google Fonts for that Canva aesthetic -->
@@ -469,6 +469,61 @@
     #timer { font-size: 3rem; font-weight: 700; color: #ff8fa3; margin: 15px 0; }
     .math-question { font-size: 1.8rem; margin: 15px 0; font-weight: 700; color: #555; letter-spacing: 2px; }
     .trap-message { font-size: 1.05rem; color: #666; margin: 15px 0 20px; line-height: 1.5; }
+
+    /* =========================================
+       📱 MOBILE RESPONSIVENESS (NEW)
+       ========================================= */
+    @media (max-width: 768px) {
+      .glass-box {
+        padding: 30px 20px;
+      }
+      #presentation-container {
+        height: auto; 
+        min-height: 600px;
+        padding-bottom: 20px;
+      }
+      .slide {
+        padding: 40px 20px 30px 20px;
+        justify-content: center; 
+      }
+      .glass-box h2, .slide h2 {
+        font-size: 1.7rem;
+      }
+      .quote {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+      }
+      .height-visual {
+        transform: scale(0.85);
+        gap: 15px;
+        margin: 10px 0;
+      }
+      .btn-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+      }
+      #btn-no, .btn-group button {
+        width: 100%;
+        max-width: 280px;
+      }
+      .cute-picker-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+      .picker-card {
+        width: 100%;
+        max-width: 280px;
+      }
+      .math-question {
+        font-size: 1.4rem;
+      }
+      #timer {
+        font-size: 2.2rem;
+      }
+    }
 
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after {
